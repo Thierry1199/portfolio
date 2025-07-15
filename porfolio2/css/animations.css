@@ -1,0 +1,93 @@
+/* Animations */
+
+/* Floating effect */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll indicator animation */
+@keyframes scrollIndicator {
+    0% {
+        height: 60px;
+        opacity: 1;
+    }
+    75% {
+        height: 10px;
+        opacity: 0.5;
+    }
+    100% {
+        height: 60px;
+        opacity: 1;
+    }
+}
+
+/* Image reveal animation */
+@keyframes imageReveal {
+    from { transform: scale(0.95); filter: brightness(0.8); }
+    to { transform: scale(1); filter: brightness(1); }
+}
+
+/* Gradient movement animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Float animation for decorative elements */
+@keyframes floatSquare {
+    0%, 100% {
+        transform: translate(0, 0) rotate(15deg);
+    }
+    25% {
+        transform: translate(5px, -5px) rotate(17deg);
+    }
+    50% {
+        transform: translate(0, -10px) rotate(15deg);
+    }
+    75% {
+        transform: translate(-5px, -5px) rotate(13deg);
+    }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+/* Text gradient animation */
+@keyframes textGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
