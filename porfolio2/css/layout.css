@@ -1,0 +1,50 @@
+/* Layout styles */
+
+/* Main layout container */
+.main {
+    background: var(--bg-color);
+}
+
+/* Section basic styles */
+section {
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+/* Full-height sections with snap */
+section.hero, 
+section.about-container,
+section.projects-section,
+section.contact {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Grid layouts */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+/* Contact section: move content-grid up */
+section.contact .content-grid {
+    margin-top: -40px;
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 0;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+} 
